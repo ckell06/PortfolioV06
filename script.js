@@ -143,26 +143,26 @@ for (let i = 0; i < works.length; i++) {
 
     tl.from(container, {
         opacity: 0,
-        x: -100,
+        x: -20,
         duration: 1,
-        ease: Power2.easeInOut,
+        ease: Power3.easeInOut,
     });
     
     tl.from(bottomDetail, {
         opacity: 0, 
-        y: 20, 
+        y: 8, 
         duration: 0.7,
-        ease: Power2.easeInOut,
+        ease: Power3.easeInOut,
     }, 0.8);
 
     tl.from(topDetail, {
         opacity: 0, 
-        y: -5, 
+        y: -3, 
         duration: 1,
-        ease: Power2.easeInOut,
+        ease: Power3.easeInOut,
     }, 1.2);
 
-console.log(detailsContainers.length, topDetails.length, bottomDetails.length)
+    console.log(    detailsContainers.length, topDetails.length, bottomDetails.length)
 
 }
 
@@ -330,3 +330,42 @@ function emailIsValid(email) {
      let pattern = /\S+@\S+\.\S+/;
      return pattern.test(email);
 }
+
+
+let address = document.querySelector(".address");
+let phone = document.querySelector(".phone");
+let CV = document.querySelector(".CV");
+
+
+gsap.to(address, {
+    scrollTrigger: {
+        trigger: address,
+        start: "top bottom",
+        toggleActions: "restart reset restart reset",
+    },
+    y: -110,
+    duration: 0.5,
+    ease: Power4.eastIn,
+});
+
+gsap.to(phone, {
+    scrollTrigger: {
+        trigger: phone,
+        start: "top bottom",
+        toggleActions: "restart reset restart reset",
+    },
+    y: -160,
+    duration: 0.5,
+    ease: Power4.eastIn,
+});
+
+gsap.to(CV, {
+    scrollTrigger: {
+        trigger: CV,
+        start: "top bottom",
+        toggleActions: "restart reset restart reset",
+    },
+    y: -210,
+    duration: 0.5,
+    ease: Power4.eastIn,
+});

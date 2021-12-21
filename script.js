@@ -346,7 +346,19 @@ gsap.to(address, {
     y: -110,
     duration: 0.5,
     ease: Power4.eastIn,
-});
+}, 1);
+
+gsap.from(address, {
+    scrollTrigger: {
+        trigger: address,
+        start: "top bottom",
+        toggleActions: "restart reset restart reset",
+    },
+    x: -210,
+    duration: 0.5,
+    ease: Power4.eastIn,
+}, 1);
+
 
 gsap.to(phone, {
     scrollTrigger: {
@@ -357,7 +369,18 @@ gsap.to(phone, {
     y: -160,
     duration: 0.5,
     ease: Power4.eastIn,
-});
+}, 1);
+
+gsap.from(phone, {
+    scrollTrigger: {
+        trigger: phone,
+        start: "top bottom",
+        toggleActions: "restart reset restart reset",
+    },
+    x: -210,
+    duration: 0.5,
+    ease: Power4.eastIn,
+}, 1);
 
 gsap.to(CV, {
     scrollTrigger: {
@@ -368,4 +391,48 @@ gsap.to(CV, {
     y: -210,
     duration: 0.5,
     ease: Power4.eastIn,
-});
+}, 1);
+
+gsap.from(CV, {
+    scrollTrigger: {
+        trigger: CV,
+        start: "top bottom",
+        toggleActions: "restart reset restart reset",
+    },
+    x: -210,
+    duration: 0.5,
+    ease: Power4.eastIn,
+}, 1);
+
+// gsap.from(address, {
+//     scrollTrigger: {
+//         trigger: address,
+//         start: "top bottom",
+//         toggleActions: "restart reset restart reset",
+//     },
+//     x: -200,
+//     duration: 0.5,
+//     ease: Power4.eastIn,
+// });
+
+// gsap.from(phone, {
+//     scrollTrigger: {
+//         trigger: phone,
+//         start: "top bottom",
+//         toggleActions: "restart reset restart reset",
+//     },
+//     x: -200,
+//     duration: 0.5,
+//     ease: Power4.eastIn,
+// });
+
+// gsap.from(CV, {
+//     scrollTrigger: {
+//         trigger: CV,
+//         start: "top bottom",
+//         toggleActions: "restart reset restart reset",
+//     },
+//     x: -300,
+//     duration: 0.5,
+//     ease: Power4.eastIn,
+// });

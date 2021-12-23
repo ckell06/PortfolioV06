@@ -32,7 +32,7 @@ gsap.from(sectionTitle, {
     duration: 0.2,
     scrollTrigger: {
         trigger: section,
-        start: "top 100",
+        start: "top -20",
         end: "bottom twiceSectionHeight",
         toggleActions: "restart reset restart reset",
         // markers: true,
@@ -146,21 +146,21 @@ for (let i = 0; i < works.length; i++) {
         x: -20,
         duration: 1,
         ease: Power3.easeInOut,
-    });
+    }, 1);
     
     tl.from(bottomDetail, {
         opacity: 0, 
         y: 8, 
         duration: 0.7,
         ease: Power3.easeInOut,
-    }, 0.8);
+    }, 1.3);
 
     tl.from(topDetail, {
         opacity: 0, 
-        y: -3, 
+        y: -10, 
         duration: 1,
         ease: Power3.easeInOut,
-    }, 1.2);
+    }, 1.3);
 
     console.log(    detailsContainers.length, topDetails.length, bottomDetails.length)
 
